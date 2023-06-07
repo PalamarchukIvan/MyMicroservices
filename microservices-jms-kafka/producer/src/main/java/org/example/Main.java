@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Producer producer = new Producer("localhost:9090");
+        Producer producer = new Producer("localhost:9092");
 
         DataSender dataSender =
                 new DataSender(producer, stringValue -> System.err.println("asked, value: " + stringValue));

@@ -15,7 +15,6 @@ import org.springframework.web.client.RestTemplate;
 public class TimeRepository {
 
     private final String source = "http://localhost:8088/currentTime";
-    @Autowired
     private final RestTemplate template;
 
     public String getServiceCurrentTime() {
